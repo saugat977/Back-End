@@ -18,6 +18,7 @@ const paymentRoute = require('./routes/paymentRoute')
 const app = express()
 
 //middleware
+app.use(express.static("public"));
 app.use(bodyParser.json())
 app.use(expressValidator())
 // to access static files express.static is used
